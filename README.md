@@ -76,10 +76,3 @@
 
 ---
 
-### 🚀 **Get Started**  
-Interested in building or contributing? Check out our [Contribution Guidelines](CONTRIBUTING.md).  
-
-📧 **Contact:** support@creatorslane.com  
-🌐 **Website:** [www.creatorslane.com](https://www.creatorslane.com)  
-
----
