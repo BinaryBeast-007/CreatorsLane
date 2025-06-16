@@ -37,7 +37,7 @@ const faqCategories = [
       {
         id: 5,
         question: 'How do I join a live class?',
-        answer: 'You can join a live class by going to "My Dashboard" > "My Classes" and clicking on the "Join Now" button when the class is about to start. You'll receive email reminders 24 hours and 15 minutes before the class begins.',
+        answer: `You can join a live class by going to "My Dashboard" > "My Classes" and clicking on the "Join Now" button when the class is about to start. You'll receive email reminders 24 hours and 15 minutes before the class begins.`,
       },
       {
         id: 6,
@@ -58,7 +58,7 @@ const faqCategories = [
       {
         id: 8,
         question: 'How do I download an eBook after purchase?',
-        answer: 'After purchasing an eBook, go to "My Dashboard" > "My eBooks," where you'll find all your purchased books. Click on the download button next to each book to save it to your device.',
+        answer: 'After purchasing an eBook, go to "My Dashboard" > "My eBooks," where you\'ll find all your purchased books. Click on the download button next to each book to save it to your device.',
       },
       {
         id: 9,

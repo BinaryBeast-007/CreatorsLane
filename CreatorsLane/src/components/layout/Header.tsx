@@ -56,7 +56,7 @@ export default function Header() {
             <NavLink to="/ebooks" className={navLinkClasses}>
               <BookOpen className="w-4 h-4 mr-1" /> eBooks Store
             </NavLink>
-            <NavLink to="/dashboard" className={navLinkClasses}>
+            <NavLink to="/my-dashboard" className={navLinkClasses}>
               <LayoutDashboard className="w-4 h-4 mr-1" /> My Dashboard
             </NavLink>
             <NavLink to="/support" className={navLinkClasses}>
@@ -124,7 +124,7 @@ export default function Header() {
                 <BookOpen className="w-5 h-5 mr-3" /> eBooks Store
               </NavLink>
               <NavLink 
-                to="/dashboard" 
+                to="/my-dashboard" 
                 className={({ isActive }) => 
                   `flex items-center p-3 rounded-md ${isActive ? 'bg-primary-50 text-primary-700' : 'text-gray-700'}`
                 }

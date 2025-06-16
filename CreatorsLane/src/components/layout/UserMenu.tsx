@@ -94,12 +94,12 @@ export default function UserMenu() {
       ) : (
         <div className="flex items-center space-x-3">
           <Link
-            to="/login"
+            to="/signin"
             className="text-sm font-medium text-gray-700 hover:text-gray-900"
           >
             Sign In
           </Link>
-          <Link to="/register" className="btn-primary text-sm py-1.5">
+          <Link to="/signup" className="btn-primary text-sm py-1.5">
             <Plus className="h-4 w-4 mr-1" />
             Join Creatorlane
           </Link>

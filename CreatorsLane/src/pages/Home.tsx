@@ -27,22 +27,28 @@ export default function Home() {
                 Host or Join Live Masterclasses with One Click!
               </h1>
               <p className="text-lg md:text-xl mb-8 text-primary-100">
-                Connect with expert creators, share knowledge, and learn new skills on 
-                our interactive platform. Start your journey today!
+                Connect with expert creators, share knowledge, and learn new
+                skills on our interactive platform. Start your journey today!
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
-                <Link to="/live-classes" className="btn bg-white text-primary-700 hover:bg-primary-50">
+                <Link
+                  to="/live-classes"
+                  className="btn bg-white text-primary-700 hover:bg-primary-50"
+                >
                   Explore Live Classes
                 </Link>
-                <Link to="/register?type=creator" className="btn bg-primary-500 text-white border border-primary-400 hover:bg-primary-600">
+                <Link
+                  to="/register?type=creator"
+                  className="btn bg-primary-500 text-white border border-primary-400 hover:bg-primary-600"
+                >
                   Become a Creator
                 </Link>
               </div>
             </div>
             <div className="lg:w-1/2 mb-8 lg:mb-0">
-              <img 
-                src="https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Creator teaching online" 
+              <img
+                src="https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Creator teaching online"
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
             </div>
@@ -54,29 +60,32 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Why Creators & Learners Love Us</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              Why Creators & Learners Love Us
+            </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Creatorlane provides all the tools you need to share knowledge and learn from experts.
+              Creatorslane provides all the tools you need to share knowledge
+              and learn from experts.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <FeatureCard 
+            <FeatureCard
               icon={<Users className="h-8 w-8 text-primary-500" />}
               title="Connect Directly"
               description="Interact with creators in real-time during live sessions"
             />
-            <FeatureCard 
+            <FeatureCard
               icon={<Star className="h-8 w-8 text-primary-500" />}
               title="Expert Content"
               description="Access quality content from verified experts in their fields"
             />
-            <FeatureCard 
+            <FeatureCard
               icon={<BookOpen className="h-8 w-8 text-primary-500" />}
               title="Learn Anywhere"
               description="Join sessions or read eBooks on any device, anytime"
             />
-            <FeatureCard 
+            <FeatureCard
               icon={<Award className="h-8 w-8 text-primary-500" />}
               title="Earn While Teaching"
               description="Monetize your knowledge with our simple payment system"
@@ -90,11 +99,14 @@ export default function Home() {
         <div className="container-custom">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-3xl font-bold">Explore Categories</h2>
-            <Link to="/categories" className="text-primary-600 hover:text-primary-700 flex items-center">
+            <Link
+              to="/categories"
+              className="text-primary-600 hover:text-primary-700 flex items-center"
+            >
               View All <ArrowRight className="h-4 w-4 ml-1" />
             </Link>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {categories.map((category) => (
               <CategoryCard key={category.id} category={category} />
@@ -108,15 +120,18 @@ export default function Home() {
         <div className="container-custom">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-3xl font-bold">Trending Live Classes</h2>
-            <Link to="/live-classes" className="text-primary-600 hover:text-primary-700 flex items-center">
+            <Link
+              to="/live-classes"
+              className="text-primary-600 hover:text-primary-700 flex items-center"
+            >
               View All <ArrowRight className="h-4 w-4 ml-1" />
             </Link>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Sample class data - would come from API in real app */}
             {[1, 2, 3].map((id) => (
-              <ClassCard 
+              <ClassCard
                 key={id}
                 id={id}
                 title={`Product Design Masterclass ${id}`}
@@ -138,14 +153,17 @@ export default function Home() {
         <div className="container-custom">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-3xl font-bold">Top Creators</h2>
-            <Link to="/creators" className="text-primary-600 hover:text-primary-700 flex items-center">
+            <Link
+              to="/creators"
+              className="text-primary-600 hover:text-primary-700 flex items-center"
+            >
               View All <ArrowRight className="h-4 w-4 ml-1" />
             </Link>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Sample creator data - would come from API in real app */}
-            <CreatorCard 
+            <CreatorCard
               id={1}
               name="Sarah Johnson"
               expertise="UX/UI Design"
@@ -153,7 +171,7 @@ export default function Home() {
               students={1243}
               avatar="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600"
             />
-            <CreatorCard 
+            <CreatorCard
               id={2}
               name="John Smith"
               expertise="Business Strategy"
@@ -161,7 +179,7 @@ export default function Home() {
               students={987}
               avatar="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
             />
-            <CreatorCard 
+            <CreatorCard
               id={3}
               name="Maria Garcia"
               expertise="Digital Marketing"
@@ -169,7 +187,7 @@ export default function Home() {
               students={856}
               avatar="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600"
             />
-            <CreatorCard 
+            <CreatorCard
               id={4}
               name="David Kim"
               expertise="Web Development"
@@ -187,26 +205,27 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">What Our Community Says</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Don't just take our word for it. Here's what creators and learners are saying about us.
+              Don't just take our word for it. Here's what creators and learners
+              are saying about us.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <TestimonialCard 
-              quote="Creatorlane has transformed how I share my expertise. The platform is intuitive, and I've built a loyal audience of students."
+            <TestimonialCard
+              quote="Creatorslane has transformed how I share my expertise. The platform is intuitive, and I've built a loyal audience of students."
               author="Michael Chen"
               role="Design Instructor"
               avatar="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600"
               rating={5}
             />
-            <TestimonialCard 
+            <TestimonialCard
               quote="I've taken classes from creators I never thought I'd have access to. The live interaction makes all the difference in my learning journey."
               author="Emily Rodriguez"
               role="Marketing Student"
               avatar="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600"
               rating={5}
             />
-            <TestimonialCard 
+            <TestimonialCard
               quote="As both a learner and creator on this platform, I'm impressed by how well it serves both sides of the educational experience."
               author="James Wilson"
               role="Tech Entrepreneur"
@@ -220,16 +239,24 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-br from-accent-500 to-accent-600 text-white">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Share Your Knowledge?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Share Your Knowledge?
+          </h2>
           <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-            Join thousands of creators who are turning their expertise into income while
-            helping others learn and grow.
+            Join thousands of creators who are turning their expertise into
+            income while helping others learn and grow.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <Link to="/register?type=creator" className="btn bg-white text-accent-600 hover:bg-accent-50">
+            <Link
+              to="/register?type=creator"
+              className="btn bg-white text-accent-600 hover:bg-accent-50"
+            >
               Become a Creator
             </Link>
-            <Link to="/how-it-works" className="btn bg-accent-600 text-white border border-accent-400 hover:bg-accent-700">
+            <Link
+              to="/how-it-works"
+              className="btn bg-accent-600 text-white border border-accent-400 hover:bg-accent-700"
+            >
               Learn How It Works
             </Link>
           </div>
